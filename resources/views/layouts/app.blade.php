@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ config('app.name', 'Login With Google') }}</title>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <!-- Bootstrap CSS via CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add your additional styles and scripts here -->
 </head>
 
 <body>
@@ -23,14 +21,11 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
 
                     </ul>
 
-                    <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
-                        <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login.index') }}">Login</a>
@@ -65,8 +60,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
-    <!-- Add your additional scripts here -->
 </body>
 
 </html>
