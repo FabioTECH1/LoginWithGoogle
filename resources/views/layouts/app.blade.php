@@ -33,10 +33,10 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">Login</a>
+                                <a class="nav-link" href="{{ route('login.index') }}">Login</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('register') }}">Register</a>
+                                <a class="nav-link" href="{{ route('register.index') }}">Register</a>
                             </li>
                         @else
                             <li class="nav-item">
